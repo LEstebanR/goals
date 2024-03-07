@@ -21,10 +21,10 @@ const Button: FC<ButtonProps> = ({
   };
 
   const SizeClasses = {
-    sm: "py-1 px-2",
-    md: "py-2 px-4",
-    lg: "py-3 px-6",
-    full: "w-full p-2",
+    sm: "w-12 ",
+    md: "w-24 ",
+    lg: "w-15 ",
+    full: "w-full",
   };
 
   const colorClasses = {
@@ -34,7 +34,7 @@ const Button: FC<ButtonProps> = ({
   return (
     <button
       className={clsx(
-        "font-bold rounded flex justify-center items-center",
+        "h-8 p-2 ont-bold rounded flex justify-center items-center",
         colorClasses[color],
         VariantClasses[variant],
         SizeClasses[size]

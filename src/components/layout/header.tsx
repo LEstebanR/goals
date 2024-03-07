@@ -8,13 +8,14 @@ const Header: FC = () => {
   } = useRouterState();
 
   return (
-    <header className="p-4 w-full top-0 fixed flex items-center justify-center border-b-2 border-dotted border-black">
-      <div className="flex justify-between items-center md:w-8/12 w-full">
+    <header className="p-2 w-full top-0 fixed flex items-center justify-center border-b-2 border-dotted border-black h-12">
+      <div className="flex justify-between items-center md:w-8/12 w-full h-full">
         <Link to="/">
-          <h1>Goals</h1>
+          <h1 className="uppercase">My Goals</h1>
         </Link>
-        <div className="flex gap-4">
-          {path !== "/login" && (
+        <div className="flex gap-4 items-center">
+          <Link to="/pricing">Pricing</Link>
+          {["/", "/pricing"].includes(path) && (
             <Link to="/login">
               <Button
                 variant="solid"

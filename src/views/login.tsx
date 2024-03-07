@@ -3,7 +3,7 @@ import LoginForm from "../components/forms/loginForm";
 
 const Login: FC = () => {
   return (
-    <div className="">
+    <div className="w-60">
       <LoginForm />
     </div>
   );
