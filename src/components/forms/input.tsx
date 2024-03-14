@@ -9,6 +9,8 @@ type CustomInputProps = {
   type: string;
 };
 
+const test 
+
 export const EmailInput: FC = () => {
   return (
     <div>
